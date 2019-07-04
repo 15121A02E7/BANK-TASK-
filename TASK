@@ -1,0 +1,32 @@
+def bank():
+    print("WELCOME TO P.V.BANK CORPORATION")
+    n=2094
+    accno=2345678937
+    num=int(input("ENTER THE PIN NUMBER PLEASE\n"))
+    if(num!=n):
+        print("THE PIN THAT YOUR ENTRED IS INCORRECT PLEASE CHEAK ONCE")
+    else:
+        print("WELCOME TO OUR BANK Mr.P.V.UMESH CHANDRA REDDY")
+        print("YOUR ACCONT NUMBER IS :",accno)
+        print("YOUR ACCOUNT TYPE IS SAVINGS ACCOUNT")
+        amount=int(input("ENTER THE AMOUNT VALUE IN DIGITS\n"))
+        bal=500000
+        if(amount>bal):
+            print("THE AMOUNT THAT YOU ENTRED IS EXCEDDED THE LIMIT OF YOUR ACCOUNT")
+        else:
+            bal=bal-amount
+            print("THE BALANCE IN YOUR ACCOUNT IS :",bal)
+            P = float(input("Enter the principal amount : "))
+            N = float(input("Enter the number of years : "))
+            R = float(input("Enter the rate of interest : "))
+            SI = (P * N * R)/100
+            print("Simple interest : {}".format(SI))
+            
+bank()
+
+
+    
+    
+            
+            
+            
